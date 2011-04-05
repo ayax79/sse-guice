@@ -147,14 +147,16 @@
 	</build>
 
 	<distributionManagement>
-        <repository>
-            <id>tzavellas.com-repo</id>
-            <url>scp://www.tzavellas.com:90/home/spiros/public_html/maven/</url>
-        </repository>
+        <snapshotRepository>
+            <id>nexus.snapshots</id>
+            <url>http://ec2-50-16-87-71.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+<!--
         <site>
             <id>tzavellas.com-site</id>
             <url>scp://www.tzavellas.com:90/home/spiros/public_html/projects/sse-guice
             </url>
         </site>
+-->
     </distributionManagement>
 </project>
